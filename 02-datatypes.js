@@ -8,3 +8,5 @@ let some_object = {
   key2: "value2"
 };
 let empty_object = {};
+let nothing = undefined;
+

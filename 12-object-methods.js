@@ -7,6 +7,21 @@ let user = {
     }
   };
 
+
+user.is_adult();
+
+let another = {
+  name: "Jane",
+  age: 30,
+  is_adult: function() {
+    let self = this;
+    console.log("This is me:", self);
+    return self.age >= 18;
+  }
+};
+
+console.log(another.is_adult());
+
 user.birthday = () => {
     user.age++;
 };
@@ -17,3 +32,7 @@ console.log(user.age); // 31
 
 console.log(user.is_adult());
 
+// I can override built in methods. 
+console.log = function(x) {}
+
+console.log("haha");

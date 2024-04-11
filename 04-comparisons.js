@@ -6,3 +6,6 @@ console.log(1 == true) // true
 console.log(1 === true) // false
 console.log('' == false) // true
 console.log('' === false) // false
+
+console.log(undefined == null);
+console.log(undefined === null);

@@ -2,6 +2,7 @@ let f = function(x) {return x + 1};
 
 console.log(f(1)); // 2
 
+
 let g = (x) => {return x + 1};
 
 let h = (x) => {

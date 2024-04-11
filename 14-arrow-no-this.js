@@ -9,8 +9,10 @@ let user = {
 
 user.is_adult();
 
+// Arrow functions do not have their own this. 
+// They inherit the one from the surrounding function.
 let person = {
-    name: "John",
+    name: "Jane",
     age: 30,
     is_adult: () => {
       console.log("This is me:", this);

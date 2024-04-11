@@ -4,6 +4,16 @@ let another_user = {};  // "object literal" syntax
 user.name = "John";
 user.surname = "Doe";
 
+another_user.name = "Jane";
+another_user["surname"] = "Smith";
+another_user["maiden name"] = "Gustaffson";
+
+let mn = "maiden name";
+console.log(another_user[mn]);
+console.log(another_user.mn);
+console.log(another_user.mn === undefined);
+console.log("--------------------");
+
 let auser = {
   name: "John",
   surname: "Doe"
